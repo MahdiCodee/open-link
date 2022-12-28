@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    .container {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .container .inp {
+        text-align: center;
+        width: 30rem;
+        height: 20px;
+        outline: none;
+        border: 2px solid gray;
+        border-radius: 4px;
+    }
+
+    .container .btn {
+        text-align: center;
+        width: 100px;
+        height: 30px;
+        cursor: pointer;
+        color: black;
+        border: none;
+        border-radius: 3px;
+        background-color: limegreen;
+    }
+
+</style>
+
+<body>
+
+    <div class="container">
+        <input class="inp" type="text" placeholder="link address">
+        <button class="btn">open</button>
+    </div>
+
+</body>
+
+<script>
+
+    let inp = document.querySelector("input");
+    let btn = document.querySelector("button");
+
+    btn.addEventListener("click", () => {
+        window.open(inp.value);
+    });
+
+</script>
+
+</html>
